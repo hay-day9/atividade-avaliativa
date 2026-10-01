@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/output.css">
+
+    <title>Grid com tailwind CSS</title>
+</head>
+<body>
+    <h1 class="text-3xl">Exemplos de Grid</h1>
+
+    <div class="grid bg-gray-200 p-4">
+        <!-- padrão grid-cols-1 -->
+        <div class="bg-red-500">1</div>
+        <div class="bg-blue-500">2</div>
+        <div class="bg-green-500">3</div>
+        <div class="bg-yellow-500">4</div>
+    </div>
+
+    <div class="grid grid-cols-2 bg-gray-200 gap-4 p-4 mt-2">
+        <div class="bg-red-500 p-4">1</div>
+        <div class="bg-blue-500 p-4">2</div>
+        <div class="bg-green-500 p-4">3</div>
+        <div class="bg-yellow-500 p-4">4</div>
+        <div class="bg-fuchsia-500 p-4">5</div>
+    </div>
+
+    <div class="grid grid-cols-3 bg-gray-200 gap-4 p-4 mt-2">
+        <div class="bg-red-500 p-4">1</div>
+        <div class="bg-blue-500 p-4">2</div>
+        <div class="bg-green-500 p-4">3</div>
+        <div class="bg-yellow-500 p-4">4</div>
+        <div class="bg-fuchsia-500 p-4">5</div>
+    </div>
+
+    <!-- col-span -->
+    <div class="grid grid-cols-3 bg-gray-200 gap-4 p-4 mt-2">
+        <div class="bg-red-500 p-4 col-span-2">1</div>
+        <div class="bg-blue-500 p-4">2</div>
+        <div class="bg-green-500 p-4">3</div>
+        <div class="bg-yellow-500 p-4">4</div>
+        <div class="bg-fuchsia-500 p-4">5</div>
+    </div>
+
+    <div class="grid grid-cols-3 bg-gray-200 gap-4 p-4 mt-2">
+        <div class="bg-red-500 p-4 col-span-2">1</div>
+        <div class="bg-blue-500 p-4 row-span-2">2</div>
+        <div class="bg-green-500 p-4">3</div>
+        <div class="bg-yellow-500 p-4">4</div>
+        <div class="bg-fuchsia-500 p-4">5</div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-gray-200 gap-4 p-4 mt-2">
+        <div class="bg-red-500 p-4">1</div>
+        <div class="bg-blue-500 p-4">2</div>
+        <div class="bg-green-500 p-4">3</div>
+        <div class="bg-yellow-500 p-4">4</div>
+        <div class="bg-fuchsia-500 p-4">5</div>
+    </div>
+    
+
+    <!-- galeria de produtos -->
+    <div class="mt-2 mb-2 gap-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"> 
+
+        <div class="bg-white p-4 rounded shadow">Produto 1</div>
+        <div class="bg-white p-4 rounded shadow">Produto 2</div>
+        <div class="bg-white p-4 rounded shadow">Produto 3</div>
+        <div class="bg-white p-4 rounded shadow">Produto 4</div>
+        <div class="bg-white p-4 rounded shadow">Produto 5</div>
+        <div class="bg-white p-4 rounded shadow">Produto 6</div>
+    </div>
+
+
+    <div class="grid grid-cols-4 bg-gray-200 gap-4 p-4 mt-2">
+        <div class="bg-red-500 p-4">1</div>
+        <div class="bg-blue-500 p-4">2</div>
+        <div class="bg-green-500 p-4">3</div>
+        <div class="bg-yellow-500 p-4">4</div>
+        <div class="bg-fuchsia-500 p-4 col-start-2">5</div>
+        <div class="bg-indigo-600 p-4">6</div>
+    </div>
+
+    <div class="grid grid-cols-4 bg-gray-200 gap-4 p-4 mt-2">
+        <div class="bg-red-500 p-4">1</div>
+        <div class="bg-blue-500 p-4">2</div>
+        <div class="bg-green-500 p-4">3</div>
+        <div class="bg-yellow-500 p-4">4</div>
+        <div class="bg-fuchsia-500 p-4">5</div>
+        <div class="col-span-3 grid grid-cols-subgrid gap-4">
+            <div class="bg-indigo-600 p-4 col-start-2">6</div>
+        </div>
+    </div>
+
+
+    <div class="grid grid-cols-4 bg-gray-200 gap-4 p-4 mt-2">
+        <div class="bg-red-500 p-4">1</div>
+        <div class="bg-blue-500 p-4">2</div>
+        <div class="bg-green-500 p-4">3</div>
+        <div class="bg-yellow-500 p-4">4</div>
+        <div class="bg-fuchsia-500 p-4 col-start-2">5</div>
+        <div class="bg-indigo-600 p-4">6</div>
+    </div>
+</body>
+</html>

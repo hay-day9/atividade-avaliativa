@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/output.css">
+    <title>Flexbox</title>
+</head>
+<body>
+    <h1 class="text-3xl">Flexbox</h1>
+
+    <div class="flex flex-row bg-gray-200 p-4">
+        <!--flex-row-->
+        <div class="bg-red-500 p-4">1</div>
+        <div class="bg-green-500 p-4">2</div>
+        <div class="bg-blue-500 p-4">3</div>
+    </div>
+
+    <div class="flex flex-col bg-gray-200 p-4 mt-2">
+        <!--flex-col-->
+        <div class="bg-red-500 p-4">1</div>
+        <div class="bg-green-500 p-4">2</div>
+        <div class="bg-blue-500 p-4">3</div>
+    </div>
+
+    <div class="flex flex-row-reverse bg-gray-200 p-4 mt-2">
+        <!--flex-row-reverse-->
+        <div class="bg-red-500 p-4">1</div>
+        <div class="bg-green-500 p-4">2</div>
+        <div class="bg-blue-500 p-4">3</div>
+    </div>
+
+    <div class="flex flex-col-reverse bg-gray-200 p-4 mt-2">
+        <!--flex-col-reverse-->
+        <div class="bg-red-500 p-4">1</div>
+        <div class="bg-green-500 p-4">2</div>
+        <div class="bg-blue-500 p-4">3</div>
+    </div>
+    
+    <div class="flex flex-row gap-4 bg-gray-200 p-4 mt-2">
+        <!--flex-row gap-4-->
+        <div class="bg-red-500 p-4">1</div>
+        <div class="bg-green-500 p-4">2</div>
+        <div class="bg-blue-500 p-4">3</div>
+    </div>
+
+    <div class="flex flex-col gap-8 bg-gray-200 p-4 mt-2">
+        <!--flex-col gap-8-->
+        <div class="bg-red-500 p-4">1</div>
+        <div class="bg-green-500 p-4">2</div>
+        <div class="bg-blue-500 p-4">3</div>
+    </div>
+
+    <div class="flex flex-row justify-start gap-2 bg-gray-200 p-4 mt-2">
+        <!--justify-start é o padrão-->
+        <div class="bg-red-500 p-4">1</div>
+        <div class="bg-green-500 p-4">2</div>
+        <div class="bg-blue-500 p-4">3</div>
+    </div>
+
+    <div class="flex flex-row justify-center gap-2 bg-gray-200 p-4 mt-2">
+        <!--justify-center-->
+        <div class="bg-red-500 p-4">1</div>
+        <div class="bg-green-500 p-4">2</div>
+        <div class="bg-blue-500 p-4">3</div>
+    </div>
+
+    <div class="flex flex-row justify-end gap-2 bg-gray-200 p-4 mt-2">
+        <!--justify-end-->
+        <div class="bg-red-500 p-4">1</div>
+        <div class="bg-green-500 p-4">2</div>
+        <div class="bg-blue-500 p-4">3</div>
+    </div>
+
+    <div class="flex flex-row justify-between gap-2 bg-gray-200 p-4 mt-2">
+        <!--justify-between-->
+        <div class="bg-red-500 p-4">1</div>
+        <div class="bg-green-500 p-4">2</div>
+        <div class="bg-blue-500 p-4">3</div>
+    </div>
+
+    <div class="flex flex-row justify-around gap-2 bg-gray-200 p-4 mt-2">
+        <!--justify-around-->
+        <div class="bg-red-500 p-4">1</div>
+        <div class="bg-green-500 p-4">2</div>
+        <div class="bg-blue-500 p-4">3</div>
+    </div>
+
+    <div class="flex flex-row justify-evenly gap-2 bg-gray-200 p-4 mt-2">
+        <!--justify-evenly-->
+        <div class="bg-red-500 p-4">1</div>
+        <div class="bg-green-500 p-4">2</div>
+        <div class="bg-blue-500 p-4">3</div>
+    </div>
+
+    <div class="flex flex-col items-start gap-2 bg-gray-200 p-4 mt-2">
+        <!--items-start-->
+        <div class="bg-red-500 p-4">1</div>
+        <div class="bg-green-500 p-4">2</div>
+        <div class="bg-blue-500 p-4">3</div>
+    </div>
+
+    <div class="flex flex-col items-center gap-2 bg-gray-200 p-4 mt-2">
+        <!--items-center-->
+        <div class="bg-red-500 p-4">1</div>
+        <div class="bg-green-500 p-4">2</div>
+        <div class="bg-blue-500 p-4">3</div>
+    </div>
+
+    <div class="flex flex-col items-end gap-2 bg-gray-200 p-4 mt-2">
+        <!--items-end-->
+        <div class="bg-red-500 p-4">1</div>
+        <div class="bg-green-500 p-4">2</div>
+        <div class="bg-blue-500 p-4">3</div>
+    </div>
+
+    <div class="flex flex-col items-stretch gap-2 bg-gray-200 p-4 mt-2">
+        <!--items-stretch-->
+        <div class="bg-red-500 p-4">1</div>
+        <div class="bg-green-500 p-4">2</div>
+        <div class="bg-blue-500 p-4">3</div>
+    </div>
+
+    <div class="flex gap-2 bg-gray-200 p-4 mt-2">
+        <div class="bg-red-500 text-white">Menu</div>
+        <!--flex-1 permite o elemento ocupar o espaço disponível-->
+        <div class="bg-blue-500 flex-1 text-white">Conteúdo principal do meu sistema web</div>
+    </div>
+
+    <div class="flex gap-2 bg-gray-200 p-4 mt-2">
+        <div class="bg-red-500 text-white">Menu</div>
+        <!--shrink-0 não permite o elemente se ajustar -->
+        <div class="bg-blue-500 text-white shrink-0">Conteúdo principal do meu sistema web</div>
+    </div>
+
+    <div class="flex gap-2 bg-gray-200 p-4 mt-2">
+        <div class="bg-red-500 text-white basis-36">Menu</div>
+        <!--basis-valor é largura inicial (responsiva) -->
+        <div class="bg-blue-500 text-white shrink-0">Conteúdo principal do meu sistema web</div>
+    </div>
+
+    <div class="flex flex-nowrap gap-2 bg-gray-200 p-4 mt-2">
+        <!--flex-nowrap é padrão, não ajusta os itens em relação a lagurada da div flex-->
+        <div class="bg-red-500 p-4">1</div>
+        <div class="bg-green-500 p-4">2</div>
+        <div class="bg-blue-500 p-4">3</div>
+        <div class="bg-amber-500 p-4">4</div>
+        <div class="bg-fuchsia-500 p-4">5</div>
+        <div class="bg-violet-500 p-4">6</div>
+    </div>
+
+    <div class="flex flex-wrap justify-evenly gap-2 bg-gray-200 p-4 mt-2">
+        <!--flex-wrap ajusta os itens em relação a lagurada da div flex-->
+        <div class="bg-red-500 p-4">1</div>
+        <div class="bg-green-500 p-4">2</div>
+        <div class="bg-blue-500 p-4">3</div>
+        <div class="bg-amber-500 p-4">4</div>
+        <div class="bg-fuchsia-500 p-4">5</div>
+        <div class="bg-violet-500 p-4">6</div>
+    </div>
+
+</body>
+</html>

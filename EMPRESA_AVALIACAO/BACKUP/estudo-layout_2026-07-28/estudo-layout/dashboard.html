@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/output.css">
+    <title>Dashboard</title>
+</head>
+<body class="bg-gray-100">
+ 
+    <div class="flex flex-col h-screen">
+        <!-- navbar -->
+         <header class="bg-slate-500 text-white p-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Dashboard</h1>
+            <input 
+                type="text"
+                placeholder="Pesquisar..."
+                class="bg-white text-black rounded px-4 py-2 w-72"
+            >
+            <div class="flex items-center gap-3">
+                <img src="https://i.pravatar.cc/40" class="rounded-full">
+                <span>Wanderson</span>
+            </div>
+         </header>
+         <!-- Conteúdo -->
+         <div class="flex flex-1 overflow-hidden">
+            <!-- Sidebar -->
+            <aside class="w-64 bg-slate-800 text-white p-6">
+                <!-- navegação -->
+                 <nav class="flex flex-col gap-4">
+                    <a href="#" class="hover:text-blue-400">Dashboard</a>
+                    <a href="#" class="hover:text-blue-400">Produtos</a>
+                    <a href="#" class="hover:text-blue-400">Clientes</a>
+                    <a href="#" class="hover:text-blue-400">Relatórios</a>
+                    <a href="#" class="hover:text-blue-400">Configurações</a>
+                 </nav>
+            </aside>
+            <!-- Main -->
+            <main class="flex-1 overflow-y-auto p-8">
+                <!-- cards -->
+                <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+                    <div class="bg-white rounded-lg shadow p-6">
+                        <h2 class="text-gray-500">Vendas</h2>
+                        <p class="text-3xl font-bold mt-2">R$ 25.000,00</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow p-6">
+                        <h2 class="text-gray-500">Clientes</h2>
+                        <p class="text-3xl font-bold mt-2">320</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow p-6">
+                        <h2 class="text-gray-500">Pedidos</h2>
+                        <p class="text-3xl font-bold mt-2">150</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow p-6">
+                        <h2 class="text-gray-500">Lucro</h2>
+                        <p class="text-3xl font-bold mt-2">R$ 8.900,00</p>
+                    </div>
+
+                </section>
+
+                <!-- Grid -->
+                <section class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8">
+                    <!-- Tabela -->
+                    <div class="lg:col-span-2 bg-white shadow rounded-lg p-6">
+                        <h2 class="text-xl font-bold mb-4">Últimos Pedidos</h2>
+
+                        <table class="w-full">
+                            <thead>
+                                <!-- table row -->
+                                <tr class="border-b">
+                                    <th class="text-left p-2">Cliente</th>
+                                    <th class="text-left p-2">Produto</th>
+                                    <th class="text-left p-2">Valor</th>
+                                </tr>
+                            </thead>
+                            <!-- corpo da tabela-->
+                            <tbody>
+                                <tr class="border-b">
+                                    <td class="p-2">Maria</td>
+                                    <td class="p-2">Notebook</td>
+                                    <td class="p-2">R$ 5.000</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-2">Ana</td>
+                                    <td class="p-2">Monitor</td>
+                                    <td class="p-2">R$ 1.200</td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-2">Pedro</td>
+                                    <td class="p-2">Mouse</td>
+                                    <td class="p-2">R$ 120</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Atividades -->
+                    <div class="bg-white shadow rounded-lg p-6">
+                        <h2 class="text-xl font-bold mb-4">Atividades</h2>
+                        <div class="space-y-4">
+                            <div class="border-b pb-2">Novo cliente cadastrado</div>
+                            <div class="border-b pb-2">
+                                Pedido aprovado
+                            </div>
+                            <div class="border-b pb-2">Produto atualizado</div>
+                            <div class="border-b pb-2">Backup realizado</div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+         </div>
+
+         <footer class="bg-slate-900 text-white text-center p-4">
+            Sistema de Vendas 2.0
+        </footer>
+    </div>
+    
+</body>
+</html>
